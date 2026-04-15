@@ -36,13 +36,11 @@ android {
 }
 
 dependencies {
-    // Существующие зависимости оставьте как есть
+
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-
-    // ↓↓↓ ДОБАВЬТЕ ЭТО НИЖЕ ↓↓↓
 
     // Retrofit для API
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
@@ -62,4 +60,15 @@ dependencies {
 
     // Swipe to refresh
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+
+    implementation("androidx.browser:browser:1.7.0")
+
+    // Для работы с темами
+    implementation("com.google.android.material:material:1.11.0")
+
+    // Для пагинации
+    implementation("androidx.paging:paging-runtime:3.2.1")
+
+    // Для уведомлений
+    implementation("androidx.work:work-runtime:2.9.0")
 }
