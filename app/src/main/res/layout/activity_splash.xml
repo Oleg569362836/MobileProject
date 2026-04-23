@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_splash_logo"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Herald"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:letterSpacing="0.05"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ваш ежедневный источник новостей"
+            android:textSize="14sp"
+            android:textColor="#E0E0E0"
+            android:layout_marginTop="8dp" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp" />
+
+        <ProgressBar
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:indeterminateTint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/loadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Загрузка новостей"
+            android:textSize="13sp"
+            android:textColor="#E0E0E0"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:text="© 2026 Mobile Herald"
+        android:textSize="12sp"
+        android:textColor="#B0BEC5"
+        android:gravity="center" />
+
+</RelativeLayout>
